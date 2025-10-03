@@ -24,7 +24,7 @@ body{
 
 header{
     text-align: center;
-    padding: 20px;
+    padding: 40px;
     font-family: var(--font-title);
 }
 
@@ -54,7 +54,6 @@ button{
     color: var(--secondary-color);
     font-weight: bold;
     width: 100px;
-    margin: 0 5px;
 }
 
 button:hover{
@@ -65,7 +64,7 @@ button:hover{
 
 .task-lists{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 20px;
     align-items: center;
 }
@@ -75,7 +74,7 @@ button:hover{
     text-align: center;
     border-radius: 10px;
     padding: 20px;
-    width: auto;
+    width: 300px;
     height: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
