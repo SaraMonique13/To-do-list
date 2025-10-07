@@ -62,7 +62,7 @@ button:hover{
     color: var(--primary-color);
 }
 
-.task-lists{
+.task-list{
     display: flex;
     justify-content: space-evenly;
     gap: 20px;
@@ -79,13 +79,44 @@ button:hover{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-ul{
-    text-align: center;
-    list-style: none;
-    margin: 10px 0;
+li {
+    background-color: var(--secondary-color);
+    margin: 5px 0;
     padding: 10px;
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+
+li button {
+    margin-left: 5px;
+    padding: 5px 8px;
+    font-size: 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.conclude-btn {
+    background-color: #A3C4BC; /* verde claro */
+    color: var(--primary-color);
+}
+
+.delete-btn {
+    background-color: #F28C8C; /* vermelho claro */
+    color: var(--secondary-color);
+}
+
+li button:hover {
+    opacity: 0.8;
+}
+
+.task-card ul {
+    min-height: 150px;
+    max-height: 220px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
