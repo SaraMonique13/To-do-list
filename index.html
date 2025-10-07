@@ -12,32 +12,27 @@
     </header>
 
     <main>
-        <form>
+        <form id="taskForm">
             <h2>Adicionar nova tarefa:</h2>
-            <input type="text" placeholder="Nova tarefa">
-            <button type="submit" onclick="addTask()">Adicionar</button>
+            <input type="text" placeholder="Nova tarefa" id="taskInput" required>
+            <button type="submit">Adicionar</button>
         </form>
     
-            <section class="task-lists">
+            <section class="task-list">
                 <div class="task-card">
                     
                     <h2>Pendentes</h2>
-                    <ul>
-                        <button onclick="concludeTask()">Concluir</button> <button onclick="deleteTask()">Excluir</button>
-                    </ul>
+                    <ul id="pendingTasks"></ul>
                 </div>
 
                 <div class="task-card">
                     <h2>Em progresso</h2>
-                    <ul>
-                        <button onclick="concludeTask()">Concluir</button> <button onclick="deleteTask()">Excluir</button>
-                    </ul>
+                    <ul id="inProgressTasks"></ul>
                 </div>
 
                 <div class="task-card">
                         <h2>Concluídas</h2>
-                        <ul>
-                            <button onclick="deleteTask()">Excluir</button>
+                        <ul id="completedTasks"></ul>
                         </ul>
                 </div>
             </section>
